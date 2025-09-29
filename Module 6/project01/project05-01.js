@@ -12,7 +12,7 @@
 
 // Constants to set the time given for the quiz in seconds
 // and the correct answers to each quiz question
-const quizTime = 20;
+const quizTime = 90;
 const correctAnswers = ["10", "4", "-6", "5", "-7"];
 
 // Elements in the quiz page
@@ -89,4 +89,5 @@ function checkAnswers() {
    }
    return correctCount;
 }
+
 
