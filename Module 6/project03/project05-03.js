@@ -22,9 +22,9 @@ for (let n = sourceDoc.firstElementChild; n != null; n = n.nextElementSibling) {
             
             let listItem = document.createElement("li");
             let link = document.createElement("a");
-            listItem.appendChild(link);
+            link.href = "#doclink" + headingCount;
             link.textContent = n.textContent
-            listItem.href = "#doclink" + headingCount;
+            listItem.appendChild(link);
             toc.appendChild(listItem);
 
             headingCount = headingCount + 1;
