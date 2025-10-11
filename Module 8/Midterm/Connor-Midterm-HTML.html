@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Connor Midterm</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<script src="Connor-Midterm.js" defer></script>
+<body>
+   <header>
+      <h1>
+         Connor McCracken Midterm
+      </h1>
+   </header>
+
+   <article>
+   <section>
+      <h1>Pizza Order</h1>
+      <form id="register" name="register" method="get" action="Credit-Card-Form.HTML">
+         <fieldset id="contactInfo">    
+            <label for="fnBox">First Name*</label>
+            <input name="firstName" id="fnBox" type="text" required />
+
+            <label for="lnBox">Last Name*</label>
+            <input name="lastName" id="lnBox" type="text" required />
+
+            <label for="addressBox">Address</label>
+            <input name="address" id="addressBox" type="text" />
+
+            <label for="mailBox">E-mail*</label>
+            <input name="email" id="mailBox" type="email" required />
+
+            <label for="phoneBox">Phone Number*</label>
+            <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                   required placeholder="(nnn) nnn-nnnn" />
+         </fieldset>
+         
+         <fieldset id="CrustChoices">
+            <label for="CrustBox">Crust Options</label>
+            <select id="CrustBox" name="CrustOption" size="5" required>
+               <option value="10">Classic ($10)</option>
+               <option value="12">Thin ($12)</option>
+               <option value="13">Thick ($13)</option>
+               <option value="14">Stuffed ($14)</option>
+            </select>      
+            
+            <label for="Pepporoni">Pepporoni ($2)</label>
+            <input type="checkbox" name="Pepporoni" id="TopPep" value="2" />  
+
+            <label for="Sausage">Sausage ($2)</label>
+            <input type="checkbox" name="Sausage" id="TopSau" value="2" />
+            
+            <label for="Ham">Ham ($2)</label>
+            <input type="checkbox" name="Ham" id="TopHam" value="2" />  
+         </fieldset> 
+         
+         <input id="regSubmit" type="submit" value="continue" />
+      </form>
+   </section>
+   
+   <aside id="reg1Aside">
+      <table>
+         <caption>Shopping Cart</caption>
+         <tr><th>Name</th><td><span id="regName"></span></td></tr>
+         <tr><th>Address</th><td><span id="regAddress"></span></td></tr>
+         <tr><th>E-mail</th><td><span id="regEmail"></span></td></tr>         
+         <tr><th>Phone</th><td><span id="regPhone"></span></td></tr>
+         <tr><th>Crust</th><td><span id="regCrust"></span></td></tr>
+         <tr><th>Toppings</th><td><span id="regTop"></span></td></tr>
+         <tr><th>TOTAL</th><td><span id="regTotal"></span></td></tr> 
+      </table>                                               
+   </aside>
+   </article>
+</body>
+</html>
