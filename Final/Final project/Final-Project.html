@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+
+      Final-Project
+      Author: Connor McCracken
+      Date:   12-5-25
+
+      Filename: Final-Project.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Final Project</title>
+   <link rel="stylesheet" href="styles.css" />
+ 
+</head>
+
+
+<body>
+   <header>
+      <h1>
+         Final Project
+      </h1>
+   </header>
+
+   <section>
+      <h1>How close are you to Hamburg Germany?</h1>
+      <p>Press the button to find out!</p>
+      <button id="button">calculate</button>
+      <style>
+         button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+         }
+      </style>
+      
+
+      <div id="homeTown"></div>
+      <div id="hamburg"></div>
+      <p id="distance"></p>
+   </section>
+
+   <script src="Final-Project.js" defer></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxBTXY7Ox_SIh--RYJsX8oWmBFosZ111w&callback=showMap&libraries=geometry" defer></script>
+
+</body>
+</html>
